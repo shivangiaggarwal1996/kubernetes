@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-deployment
+  labels:
+    app: microservices-kubernetes
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: order
+      app: microservices-kubernetes
+  template:
+    metadata:
+      name: order
+      labels:
+        name: order
+        app: microservices-kubernetes
+
+    spec:
+      containers:
+        - name: order
+          image: shivangiaggarwal/kubernetes:order
+          ports:
+            - containerPort: 8091
