@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aggregator_service-deployment
+  name: aggregator-deployment
   labels:
     app: microservices-kubernetes
 spec:
   replicas: 2
   selector:
     matchLabels:
-      name: aggregator_service
+      name: aggregator-service
       app: microservices-kubernetes
   template:
     metadata:
-      name: aggregator_service
+      name: aggregator-service
       labels:
-        name: aggregator_service
+        name: aggregator-service
         app: microservices-kubernetes
 
     spec:
       containers:
-        - name: aggregator_service
+        - name: aggregator-service
           image: shivangiaggarwal/kubernetes:aggregator-service
           ports:
             - containerPort: 8092

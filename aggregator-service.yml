@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: aggregator_service
+  name: aggregator-service
   labels:
-    name: aggregator_service
+    name: aggregator-service
     app: microservices-kubernetes
 
 spec:
@@ -12,6 +12,6 @@ spec:
     - targetPort: 8092
       port: 8092
   selector:
-    name: aggregator_service
+    name: aggregator-service
     app: microservices-kubernetes
 
