@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: user
-          image: shivangiaggarwal/kubernetes:user
+          image: shivangiaggarwal/kubernetes:user_db_done_chal_pae
           ports:
             - containerPort: 8090

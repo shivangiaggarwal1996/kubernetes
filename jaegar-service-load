@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jaeger
+  labels:
+    name: jaeger
+    app: microservices-kubernetes
+
+spec:
+  type: LoadBalancer
+  ports:
+    - targetPort: 16686
+      port: 16686
+  selector:
+    name: jaeger
+    app: microservices-kubernetes
