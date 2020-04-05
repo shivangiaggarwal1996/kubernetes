@@ -7,7 +7,7 @@ metadata:
     app: microservices-kubernetes
 
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - targetPort: 8092
       port: 8092
