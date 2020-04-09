@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name: aggregator-service
-          image: shivangiaggarwal/kubernetes:aggregator-service
+          image: shivangiaggarwal/kubernetes:aggragtor1
           ports:
             - containerPort: 8092
