@@ -18,8 +18,8 @@ spec:
     - targetPort: 5775
       port: 5775
       protocol: UDP
-    - targetPort: 6831
-      port: 6831
+    - targetPort: 6832
+      port: 6832
       protocol: UDP
     - targetPort: 5778
       port: 5778
