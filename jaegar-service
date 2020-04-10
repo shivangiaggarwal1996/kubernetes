@@ -9,9 +9,22 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - targetPort: 6831
-      port: 6831
-      protocol: UDP
+      - name: jaeger-collector-tchannel
+        port: 14267
+        protocol: TCP
+        targetPort: 14267
+      - name: jaeger-collector-http
+        port: 14268
+        protocol: TCP
+        targetPort: 14268
+      - name: jaeger-collector-zipkin
+        port: 9411
+        protocol: TCP
+        targetPort: 9411
+
   selector:
     name: jaeger
     app: microservices-kubernetes
+
+
+
