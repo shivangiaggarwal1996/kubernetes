@@ -94,7 +94,7 @@ items:
 - apiVersion: v1
   kind: Service
   metadata:
-    name: jaeger-agent
+    name: jaeger
     labels:
       app: jaeger
       app.kubernetes.io/name: jaeger
