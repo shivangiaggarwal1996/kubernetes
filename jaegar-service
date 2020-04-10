@@ -30,6 +30,7 @@ spec:
       port: 14268
       protocol: TCP
     - targetPort: 14267
+      name : port8
       port: 14267
       protocol: TCP
     - targetPort: 9411
