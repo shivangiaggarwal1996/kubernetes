@@ -10,27 +10,30 @@ spec:
   type: ClusterIP
   ports:
     - targetPort: 6831
-      port: 6831
-      protocol: UDP
-    - targetPort: 6831
+      name: port7
       port: 6831
       protocol: UDP
     - targetPort: 5775
+      name: port1
       port: 5775
       protocol: UDP
     - targetPort: 6832
+      name: port6
       port: 6832
       protocol: UDP
     - targetPort: 5778
+      name: port5
       port: 5778
       protocol: TCP
     - targetPort: 14268
+      name: port3
       port: 14268
       protocol: TCP
     - targetPort: 14267
       port: 14267
       protocol: TCP
     - targetPort: 9411
+      name: port2
       port: 9411
       protocol: TCP
   selector:
