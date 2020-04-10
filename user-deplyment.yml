@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: user
-          image: shivangiaggarwal/kubernetes:user2
+          image: shivangiaggarwal/assignment2:user
           ports:
             - containerPort: 8090

@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name: order
-          image: shivangiaggarwal/kubernetes:order2
+          image:  shivangiaggarwal/assignment2:order
           ports:
             - containerPort: 8091
